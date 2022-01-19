@@ -1,0 +1,125 @@
+@import url('http://fonts.cdnfonts.com/css/letter-gothic-std-2');
+@import url('http://fonts.cdnfonts.com/css/magilio');
+@import url('http://fonts.cdnfonts.com/css/dream-orphans');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+/*letter gothic std
+magilio
+dream orphans
+euclid square
+
+FOND : #FFDCDB
+TEXTE VIOLET : #110527*/
+
+
+body{
+    background-color:#FFDCDB;
+    color:#110527;
+}
+
+.infos{
+    transform: rotate(-90deg);
+    right: 680px;
+    position: relative;
+    top:150px;
+    font-family: "Letter Gothic Std";
+    letter-spacing: 8px;
+}
+
+.linkedin{
+    font-family: "Dream Orphans";
+    text-align: end;
+    margin:0 auto;
+    margin: 0;
+    padding: 0;
+}
+
+.mail{
+    font-family: "Montserrat";
+    text-align: end;
+}
+
+.bulle_homepage{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    top: 200px;
+    height: 50vw;
+    width: 50vw;
+    margin-bottom: 200px;
+}
+
+.bulle{
+    border-radius: 100%;
+    height: 50vw;
+    width: 50vw;
+}
+
+.petite{
+    height: 25vw;
+    width: 25vw;
+    opacity: 0.4;
+}
+
+.nom{
+    position: relative;
+    text-align: start;
+    font-family: "Dream orphans";
+    font-size:120px;
+    right: 100px;
+    bottom:700px;
+    width:800px;
+}
+
+.statut{
+    position: relative;
+    text-align: end;
+    font-family: "Magilio";
+    color:white;
+    font-size: 70px;
+    letter-spacing: 5px;
+    bottom:700px;
+    width: 800px;
+    left:100px;
+}
+
+#projets{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.titre{
+    font-family: "Dream Orphans";
+    font-size: 100px;
+    color: white;
+}
+
+.description_courte{
+    font-family: "Montserrat";
+    font-size: 20px;
+    color:#110527;
+}
+
+.container{
+    width: 500px;
+}
+
+.image{
+    border-radius: 20px;
+    width: 100%;
+    height: auto;
+}
+
+#a_propos{
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    background-color: white;
+    width: 100%;
+    height: 1000px;
+}
+
+#a_propos .titre{
+    color: #110527;
+    font-family: "Magilio";
+    font-size: 80px;
+}
