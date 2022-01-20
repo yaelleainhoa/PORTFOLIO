@@ -15,6 +15,7 @@ body{
     background-color:#FFDCDB;
     color:#110527;
     margin: 0;
+    overflow-x: hidden;
 }
 
 * {
@@ -117,6 +118,7 @@ body{
     height: 30vw;
     width: 30vw;
     opacity: 0.4;
+    animation: moveUpDown 3s ease-in-out infinite alternate;
 }
 
 .titre{
@@ -302,3 +304,12 @@ body{
     position: relative;
     top:50px
 }
+
+@keyframes moveUpDown {
+	from {
+      transform: translateY(0px) translateX(-50%);
+	}
+    to {
+      transform: translateY(-30px) translateX(-50%);
+    }
+  }
