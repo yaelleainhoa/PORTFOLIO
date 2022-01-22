@@ -22,6 +22,16 @@ body{
     box-sizing: border-box;
     }
 
+
+a{color: #110527;
+    text-decoration: none;}
+a:hover {color: white;}
+
+h3{
+    margin:0;
+    padding: 0;
+}
+
 /*--------------------*/
 /*-----ACCUEIL---------*/
 /*--------------------*/
@@ -105,33 +115,54 @@ body{
     display: block;
     margin-left: auto;
     margin-right: auto;
+    width: 200vw;
 }
 
 .projet{
     position: relative;
-    height: 100vh;
+    height: 80vh;
+    width: 200vw;
     margin-bottom:15vw;
+    display: flex;
+    transition: all 1s ease-in-out; 
+
+}
+
+.projet>div{
+    flex-shrink: 0;
+    width: 100vw;
+}
+
+  
+.projet.focus{
+    transform: translateX(-100vw);
+}
+
+
+
+.projet.projectTranslate2{
+    animation: projectToMiniature 0.5s forwards ;
 }
 
 .petite{
     position: absolute;
-    height: 30vw;
-    width: 30vw;
+    height: 90%;
+    width: auto;
     opacity: 0.4;
-    animation: moveUpDown 3s ease-in-out infinite alternate;
+    animation: moveUpDown 2s ease-in-out infinite alternate;
 }
 
 .titre{
     position: absolute;
     font-family: "Dream Orphans";
-    font-size: 10vw;
+    font-size: 8vw;
     color: white;
 }
 
 .description_courte{
     position: absolute;
     font-family: "Montserrat";
-    font-size: 2vw;
+    font-size: 1.5vw;
     color:#110527;
 }
 
@@ -139,147 +170,202 @@ body{
     position: relative;
 }
 
-.image{
+.presentation .image{
     border-radius: 20px;
-    width: 36%;
+    width: 35%;
     height: auto;
 }
 
+.description{
+    display: flex;
+    position: relative;
+}
+
+.description .image{
+    width: 50%;
+    height:auto;
+    position: relative;
+    margin: 3%;
+}
+
+.description .image > img{
+    width: 100%;
+    border-radius: 2%;
+}
+
+
+.text{
+    width: 50%;
+    margin: 3%;
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: relative;
+    top:-10%;
+}
+
+
+.description .titre{
+    font-size: 6vw;
+    position: relative;
+    margin-bottom: 2%;
+}
+
+.description_longue{
+    position: relative;
+    font-family: "Montserrat";
+    font-size: 1vw;
+    color:#110527;
+    text-align: justify;
+}
+
+
 
 /*----BABYRUN---------*/
+/*PRESENTATION*/
 
-.babyrun .container{
-    left:20vw;
-    top:30vh;
+.babyrun .presentation .image{
+    width: 40%;;
 }
 
-.babyrun .titre{
-    top:-30vh;
-    left:28vw;
+.babyrun .presentation .container{
+    left:20%;
+    top:30%;
+    width: 80%;
 }
 
-.babyrun .petite{
+.babyrun .presentation .titre{
+    bottom: 12%;
+    left:28%;
+}
+
+.babyrun .presentation .petite{
     z-index: -1;
-    top:-35vh;
-    left:38vw;
+    bottom:5%;
+    left:38%;
+    width: 30%;
+    height: auto;
 }
 
-.babyrun .description_courte{
+.babyrun .presentation .description_courte{
     text-align: start;
-    bottom: 0;
-    left:38vw;
-    top:50vh;
+    left:42%;
+    bottom:-2%;
 }
 
 /*------SHADERLAB---------*/
+/*PRESENTATION*/
 
-.shaderlab .image{
-    width: 40%;;
+.shaderlab .presentation .image{
+    width: 30%;;
 }
 
-.shaderlab .container{
-    left:40vw;
-    top:20vh;
+.shaderlab .presentation .container{
+    left:40%;
+    top:20%;
 }
 
-.shaderlab .titre{
-    top:10vh;
-    left:-20vw;
+.shaderlab .presentation .titre{
+    top:10%;
+    left:-18%;
 }
 
-.shaderlab .petite{
+.shaderlab .presentation .petite{
     z-index: -1;
-    left:-10vw;
-    top:20vh;
+    left:-2%;
+    top:10%;
 }
 
-.shaderlab .description_courte{
+.shaderlab .presentation .description_courte{
     text-align: start;
 
 }
+
+
 
 /*------PORTFOLIO---------*/
 
-.portfolio .image{
-    width: 40%;;
+.portfolio .presentation .image{
+    width: 35%;;
 }
 
-.portfolio .container{
-    left:20vw;
-    top:30vh;
+.portfolio .presentation .container{
+    left:20%;
+    top:30%;
 }
 
-.portfolio .titre{
-    top:-25vh;
-    left:35vw;
+.portfolio .presentation .titre{
+    top:-40%;
+    left:30%;
 }
 
-.portfolio .petite{
+.portfolio .presentation .petite{
     z-index: -1;
-    top:-20vh;
-    left:42vw;
+    top:-40%;
+    left:42%;
 }
 
-.portfolio .description_courte{
+.portfolio .presentation .description_courte{
     text-align: start;
-    top:-18vh;
-    left:-10vw;
+    top:-25%;
+    left:2%;
 }
 
 /*------BLENDER---------*/
 
-.blender .image{
-    width: 45%;;
+.blender .presentation .image{
+    width: 40%;;
 }
 
-.blender .container{
-    left:45vw;
-    top:20vh;
+.blender .presentation .container{
+    left:45%;
+    top:20%;
 }
 
-.blender .titre{
-    left:-20vw;
-    top:-15vh;
+.blender .presentation .titre{
+    left:-20%;
+    top:-40%;
 }
 
-.blender .petite{
+.blender .presentation .petite{
     z-index: -1;
-    left:-10vw;
-    top:-20vh;
+    left:1%;
+    top:-30%;
 }
 
-.blender .description_courte{
+.blender .presentation .description_courte{
     text-align: end;
-    left:-38vw;
-    top:35vh;
+    left:-30%;
+    bottom:20%;
 }
 
 /*------COQUELICOT---------*/
 
-.coquelicot .image{
-    width: 33%;;
+.coquelicot .presentation .image{
+    width: 30%;;
 }
 
-.coquelicot .container{
-    left:20vw;
-    top:10vh;
+.coquelicot .presentation .container{
+    left:20%;
+    top:10%;
 }
 
-.coquelicot .titre{
-    top:-12vh;
-    left:20vw;
+.coquelicot .presentation .titre{
+    top:-25%;
+    left:20%;
 }
 
-.coquelicot .petite{
+.coquelicot .presentation .petite{
     z-index: -1;
-    left:40vw;
-    top:-20vh;
+    left:40%;
+    top:-20%;
 }
 
-.coquelicot .description_courte{
+.coquelicot .presentation .description_courte{
     text-align: start;
-    left:30vw;
-    top:10vh;
+    left:32%;
+    top:12%;
 }
 
 
@@ -311,5 +397,23 @@ body{
 	}
     to {
       transform: translateY(-30px) translateX(-50%);
+    }
+  }
+
+  @keyframes miniatureToProject {
+	from {
+      transform: translateX(0px);
+	}
+    to {
+      transform: translateX(-100px);
+    }
+  }
+
+  @keyframes projectToMiniature {
+	from {
+      transform: translateX(0px);
+	}
+    to {
+      transform: translateX(100px);
     }
   }
