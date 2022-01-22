@@ -32,6 +32,13 @@ h3{
     padding: 0;
 }
 
+p{
+    font-family: "Montserrat";
+    font-size: 10%;
+    width: 80%;
+    text-align: justify;
+}
+
 /*--------------------*/
 /*-----ACCUEIL---------*/
 /*--------------------*/
@@ -122,11 +129,19 @@ h3{
     position: relative;
     height: 80vh;
     width: 200vw;
-    margin-bottom:15vw;
     display: flex;
     transition: all 1s ease-in-out; 
-
+    margin-bottom: 5%;
+    cursor: pointer;
 }
+
+ /* .presentation{
+    background-color: crimson;
+}
+
+ .description{
+    background-color: crimson;
+} */
 
 .projet>div{
     flex-shrink: 0;
@@ -179,30 +194,35 @@ h3{
 .description{
     display: flex;
     position: relative;
+    align-items: center;
 }
 
 .description .image{
     width: 50%;
     height:auto;
     position: relative;
-    margin: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .description .image > img{
-    width: 100%;
+    width: 90%;
     border-radius: 2%;
+}
+
+.description .legende{
+    font-family: "Letter Gothic Std";
+    margin:1%;
+    text-align: center;
 }
 
 
 .text{
     width: 50%;
-    margin: 3%;
-    margin-left: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+    height:auto;
     position: relative;
-    top:-10%;
+    margin: 3%;
 }
 
 
@@ -230,8 +250,8 @@ h3{
 }
 
 .babyrun .presentation .container{
-    left:20%;
-    top:30%;
+    left:25%;
+    top:25%;
     width: 80%;
 }
 
@@ -263,7 +283,7 @@ h3{
 
 .shaderlab .presentation .container{
     left:40%;
-    top:20%;
+    top:15%;
 }
 
 .shaderlab .presentation .titre{
@@ -320,7 +340,7 @@ h3{
 
 .blender .presentation .container{
     left:45%;
-    top:20%;
+    top:30%;
 }
 
 .blender .presentation .titre{
@@ -348,18 +368,18 @@ h3{
 
 .coquelicot .presentation .container{
     left:20%;
-    top:10%;
+    top:30%;
 }
 
 .coquelicot .presentation .titre{
-    top:-25%;
+    top:-45%;
     left:20%;
 }
 
 .coquelicot .presentation .petite{
     z-index: -1;
     left:40%;
-    top:-20%;
+    top:-30%;
 }
 
 .coquelicot .presentation .description_courte{
@@ -380,6 +400,10 @@ h3{
     font-size: 20vw;;
     width: 100%;
     height: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 #a_propos .titre{
@@ -390,6 +414,10 @@ h3{
     position: relative;
     top:50px
 }
+/* 
+#a_propos .petit_texte{
+
+} */
 
 @keyframes moveUpDown {
 	from {
