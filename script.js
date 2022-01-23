@@ -20,7 +20,7 @@ function unfocus(projet){
 
 for(proj in projets){
     let presentation = document.querySelector('.'+projets[proj]+' .presentation');
-    let description = document.querySelector('.'+projets[proj]+' .description');
+    let description = document.querySelector('.'+projets[proj]+' .description .text');
 
     let projet = document.querySelector('.'+projets[proj]);
     presentation.addEventListener('click', () => {
@@ -34,3 +34,17 @@ for(proj in projets){
     });
 }
 
+// var swiper = new Swiper(".mySwiper", {
+//     navigation: {
+//       nextEl: ".swiper-button-next",
+//       prevEl: ".swiper-button-prev",
+//     },
+//   });
+
+var swiper = new Swiper(".mySwiper", {
+    direction: "vertical",
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });

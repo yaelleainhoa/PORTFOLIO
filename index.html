@@ -3,6 +3,7 @@
 	<head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
         <link rel="stylesheet" href="styleHomePage.css">
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
         <link href="http://fonts.cdnfonts.com/css/letter-gothic-std-2" rel="stylesheet">
         <link href="http://fonts.cdnfonts.com/css/magilio" rel="stylesheet">
         <link href="http://fonts.cdnfonts.com/css/dream-orphans" rel="stylesheet">
@@ -18,8 +19,8 @@
             <div class="infos"><h3>PROGRAMMATION - WEB - AUDIOVISUEL - DESIGN</h3></div>
 
             <div class="contacts">
-                <a class="linkedin" target="_blank" href="https://www.linkedin.com/in/ya%C3%ABlle-saralegui-tran-552351222/"> <h3>LINKEDIN</h3></a><br>
                 <a class="mail" href="mailto:yaellesaraleguitran@gmail.com"><h3>yaellesaraleguitran@gmail.com</h3></a>
+                <a class="linkedin" target="_blank" href="https://www.linkedin.com/in/ya%C3%ABlle-saralegui-tran-552351222/"> <h3>LINKEDIN</h3></a><br>
             </div>
 
             <div class="bulle_homepage">
@@ -35,20 +36,49 @@
             <div class="projet babyrun">
                 <div class="presentation">
                     <div class="container"> 
-                      <img class="image" alt="Extrait du jeu" src="IMAGES/babyrun.png"> 
+                      <img class="image" alt="Extrait du jeu" src="IMAGES/babyrun/miniature.png"> 
                       <img class="petite bulle" alt="Bulle de fond temporaire" src="IMAGES/petitebulle.png"> 
                       <div class="titre">Run <br> baby <br> run !</div> 
                       <div class="description_courte">Jeu vidéo se calquant sur le modèle <br>de temple run codé en c++,  openGL, <br>SLD1, SDL_TTF, ASSIMP</div>
                     </div>
                 </div>
                 <div class="description">
-                    <div class="image">
-                        <img alt="Extrait du jeu" src="IMAGES/babyrun.png">
-                        <div class="legende">Legende photo !</div>
+                    <div class="image swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img alt="Extrait du jeu" src="IMAGES/babyrun/miniature.png">
+                                <div class="legende">Legende photo !</div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img alt="Extrait du jeu" src="IMAGES/babyrun/obstacle.png">
+                                <div class="legende">Legende photo !</div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img alt="Extrait du jeu" src="IMAGES/babyrun/voiture.png">
+                                <div class="legende">Legende photo !</div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img alt="Extrait du jeu" src="IMAGES/babyrun/POV.png">
+                                <div class="legende">Legende photo !</div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img alt="Extrait du jeu" src="IMAGES/babyrun/nom.png">
+                                <div class="legende">Legende photo !</div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img alt="Extrait du jeu" src="IMAGES/babyrun/scores.png">
+                                <div class="legende">Legende photo !</div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img alt="Extrait du jeu" src="IMAGES/babyrun/parties.png">
+                                <div class="legende">Legende photo !</div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
                     </div>
                      <div class="text">
                         <div class="titre">Run baby run !</div>
-                        <div class="description_longue">Run baby run ! Est un projet réalisé lors de ma deuxième année à l’IMAC. Il s’agit d’un jeu vidéo dans lequel on incarne un bébé en poussette essayant d’échapper à ses parents en Twingo. Le fonctionnement du jeu s’inspire de Temple Run : on peut éviter les différents obstacles en sautant, se baissant et en naviguant de gauche à droite. Comme dans le jeu, certains obstacles mettent fin à la partie et d’autres ralentissent le joueur, ce qui amène la voiture à s’approcher. Le score du joueur augmente lorsqu’il attrape des pièces (biberon, tétine et peluche dans le jeu). Le terrain est infini et crée aléatoirement, les meilleurs scores sont gardés dans la mémoire du jeu et option additionnelle au jeu original : il est possible dans ce jeu de sauvegarder des parties. 
+                        <div class="description_longue"> <b>Run baby run !</b> Est un projet réalisé lors de ma deuxième année à l’IMAC. Il s’agit d’un jeu vidéo dans lequel on incarne un bébé en poussette essayant d’échapper à ses parents en Twingo. Le fonctionnement du jeu s’inspire de Temple Run : on peut éviter les différents obstacles en sautant, se baissant et en naviguant de gauche à droite. Comme dans le jeu, certains obstacles mettent fin à la partie et d’autres ralentissent le joueur, ce qui amène la voiture à s’approcher. Le score du joueur augmente lorsqu’il attrape des pièces (biberon, tétine et peluche dans le jeu). Le terrain est infini et crée aléatoirement, les meilleurs scores sont gardés dans la mémoire du jeu et option additionnelle au jeu original : il est possible dans ce jeu de sauvegarder des parties. 
                             Ce projet a été codé en C++, openGL, SDL.. il est donc téléchargeable sur le git : ….
                             De plus, il s’agissait de la première fois que nous avons utilisé la librairie ASSIMP, qui permet d’ajouter des modèles 3D au projet. Certains des modèles ont donc été crée en Blender pour le projet. </div>
                     </div>
@@ -66,9 +96,38 @@
                     </div>
                 </div>
                 <div class="description">
-                    <div class="image">
-                        <img alt="Extrait du jeu" src="IMAGES/shaderlab.png">
-                        <div class="legende">Legende photo !</div>
+                    <div class="image swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img alt="Extrait du jeu" src="IMAGES/babyrun/miniature.png">
+                                <div class="legende">Legende photo !</div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img alt="Extrait du jeu" src="IMAGES/babyrun/obstacle.png">
+                                <div class="legende">Legende photo !</div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img alt="Extrait du jeu" src="IMAGES/babyrun/voiture.png">
+                                <div class="legende">Legende photo !</div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img alt="Extrait du jeu" src="IMAGES/babyrun/POV.png">
+                                <div class="legende">Legende photo !</div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img alt="Extrait du jeu" src="IMAGES/babyrun/nom.png">
+                                <div class="legende">Legende photo !</div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img alt="Extrait du jeu" src="IMAGES/babyrun/scores.png">
+                                <div class="legende">Legende photo !</div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img alt="Extrait du jeu" src="IMAGES/babyrun/parties.png">
+                                <div class="legende">Legende photo !</div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
                     </div>
                     <div class="text">
                         <div class="titre">Shader Lab</div>
@@ -90,9 +149,38 @@
                     </div>
                 </div>
                 <div class="description">
-                    <div class="image">
-                        <img alt="Extrait du jeu" src="IMAGES/portfolio.png">
-                        <div class="legende">Legende photo !</div>
+                    <div class="image swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img alt="Extrait du jeu" src="IMAGES/babyrun/miniature.png">
+                                <div class="legende">Legende photo !</div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img alt="Extrait du jeu" src="IMAGES/babyrun/obstacle.png">
+                                <div class="legende">Legende photo !</div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img alt="Extrait du jeu" src="IMAGES/babyrun/voiture.png">
+                                <div class="legende">Legende photo !</div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img alt="Extrait du jeu" src="IMAGES/babyrun/POV.png">
+                                <div class="legende">Legende photo !</div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img alt="Extrait du jeu" src="IMAGES/babyrun/nom.png">
+                                <div class="legende">Legende photo !</div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img alt="Extrait du jeu" src="IMAGES/babyrun/scores.png">
+                                <div class="legende">Legende photo !</div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img alt="Extrait du jeu" src="IMAGES/babyrun/parties.png">
+                                <div class="legende">Legende photo !</div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
                     </div>
                     <div class="text">
                         <div class="titre">Portfolio</div>
@@ -112,9 +200,38 @@
                     </div>
                 </div>
                 <div class="description">
-                    <div class="image">
-                        <img alt="Extrait du jeu" src="IMAGES/blender.png">
-                        <div class="legende">Legende photo !</div>
+                    <div class="image swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img alt="Extrait du jeu" src="IMAGES/babyrun/miniature.png">
+                                <div class="legende">Legende photo !</div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img alt="Extrait du jeu" src="IMAGES/babyrun/obstacle.png">
+                                <div class="legende">Legende photo !</div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img alt="Extrait du jeu" src="IMAGES/babyrun/voiture.png">
+                                <div class="legende">Legende photo !</div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img alt="Extrait du jeu" src="IMAGES/babyrun/POV.png">
+                                <div class="legende">Legende photo !</div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img alt="Extrait du jeu" src="IMAGES/babyrun/nom.png">
+                                <div class="legende">Legende photo !</div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img alt="Extrait du jeu" src="IMAGES/babyrun/scores.png">
+                                <div class="legende">Legende photo !</div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img alt="Extrait du jeu" src="IMAGES/babyrun/parties.png">
+                                <div class="legende">Legende photo !</div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
                     </div>
                     <div class="text">
                             <div class="titre">Nature morte</div>
@@ -133,9 +250,38 @@
                     </div>
                 </div>
                 <div class="description">
-                    <div class="image">
-                        <img alt="Extrait du jeu" src="IMAGES/coquelicot.png">
-                        <div class="legende">Legende photo !</div>
+                    <div class="image swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img alt="Extrait du jeu" src="IMAGES/babyrun/miniature.png">
+                                <div class="legende">Legende photo !</div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img alt="Extrait du jeu" src="IMAGES/babyrun/obstacle.png">
+                                <div class="legende">Legende photo !</div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img alt="Extrait du jeu" src="IMAGES/babyrun/voiture.png">
+                                <div class="legende">Legende photo !</div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img alt="Extrait du jeu" src="IMAGES/babyrun/POV.png">
+                                <div class="legende">Legende photo !</div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img alt="Extrait du jeu" src="IMAGES/babyrun/nom.png">
+                                <div class="legende">Legende photo !</div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img alt="Extrait du jeu" src="IMAGES/babyrun/scores.png">
+                                <div class="legende">Legende photo !</div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img alt="Extrait du jeu" src="IMAGES/babyrun/parties.png">
+                                <div class="legende">Legende photo !</div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
                     </div>
                     <div class="text">
                         <div class="titre">Recoding</div>
@@ -154,7 +300,7 @@
 
 
     </body>
-
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script type="text/javascript" src="script.js"></script>
 
 </html>

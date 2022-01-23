@@ -39,6 +39,57 @@ p{
     text-align: justify;
 }
 
+.p5Canvas {
+    z-index: -1;
+    border-radius: 100%;;
+}
+
+.swiper {
+    height: 40vw;
+    width: 50% ;
+    margin-left: 2% !important;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    border-radius: 3%;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 90%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .swiper-pagination-bullet{
+      opacity: 0.08 !important;
+      width: 12px !important;
+      height: 12px !important;
+  }
+
+  .swiper-pagination-bullet-active{
+    background:  #FFDCDB !important;
+    opacity: 1 !important;
+
+}
+
 /*--------------------*/
 /*-----ACCUEIL---------*/
 /*--------------------*/
@@ -67,7 +118,9 @@ p{
 }
 
 .mail{
+    position: relative;
     font-size: 1vw;
+    top:-30%;
     font-family: "Montserrat";
 }
 
@@ -81,6 +134,7 @@ p{
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 5%;
     height: 100vh;
     width: 100vw;
 }
@@ -135,13 +189,6 @@ p{
     cursor: pointer;
 }
 
- /* .presentation{
-    background-color: crimson;
-}
-
- .description{
-    background-color: crimson;
-} */
 
 .projet>div{
     flex-shrink: 0;
@@ -197,8 +244,7 @@ p{
     align-items: center;
 }
 
-.description .image{
-    width: 50%;
+.description .image .swiper-wrapper .swiper-slide{
     height:auto;
     position: relative;
     display: flex;
@@ -206,14 +252,9 @@ p{
     align-items: center;
 }
 
-.description .image > img{
-    width: 90%;
-    border-radius: 2%;
-}
-
 .description .legende{
     font-family: "Letter Gothic Std";
-    margin:1%;
+    margin-top:3%;
     text-align: center;
 }
 
