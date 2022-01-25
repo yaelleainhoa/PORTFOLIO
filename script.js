@@ -1,6 +1,6 @@
 // window.addEventListener("wheel", function() {
 //     let pageY = window.scrollY;
-//     document.querySelector(".nom").style.transform = `translateY(${pageY * 0.15}px)`;
+//     document.querySelector(".nom").style.transform = `translateY(${pageY * 3}px)`;
 //     document.querySelector(".statut").style.transform = `translateY(${pageY*0.2}px)`;
 //     // document.querySelector(".infos").style.transform = `rotate(-90deg) translateY(${pageY*0.01}px)`;
 //     document.querySelector(".nom").style.transform = `translateX(${-100})px)`;
