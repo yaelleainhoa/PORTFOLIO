@@ -97,6 +97,37 @@ p{
 
 }
 
+.arrow-round {
+    position: absolute;
+    width: 2vw;
+    height: 2vw;
+    right: 4vw;
+    /* margin: 100px auto; */
+  
+    border: 0.2vw solid #110527;
+    border-radius: 50%;
+    border-right-color: transparent;
+  }
+  
+  .arrow-round::after {
+    content: "";
+    position: absolute;
+  
+    border: 0.6vw solid #ffffff;
+    top: -0.1vw; 
+    right: -0.05vw;
+  
+    border-bottom-color: #110527;
+    border-top-width: 0;
+    border-right-width: 0;
+    border-left-color: transparent;
+  }
+
+  .arrow-round:hover{
+    cursor: pointer;
+  }
+  
+
 /*--------------------*/
 /*-----ACCUEIL---------*/
 /*--------------------*/
@@ -140,6 +171,7 @@ p{
 .contacts{
     text-align: end;
     margin-right: 2vw;
+    height: fit-content;
 }
 
 .bulle_homepage{
@@ -180,6 +212,84 @@ p{
     letter-spacing: 5px;
     right:15vw;
     animation: appearFromRight 1s ease-in-out;
+}
+
+/*--------------------*/
+/*-----TRANSITION---------*/
+/*--------------------*/
+
+.transition {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 30vh;
+    left:40%;
+    top:65%;
+    position: absolute;
+    opacity:0;
+    z-index: -1;
+   }
+
+   .appear{
+    opacity:1;
+   }
+   
+   .chevron {
+     position: absolute;
+     width: 3.5vw;
+     height: 0.8vw;
+     opacity: 0;
+     transform: scale(0.3);
+     animation: move-chevron 3s ease-out infinite;
+   }
+   
+   .chevron:first-child {
+     animation: move-chevron 3s ease-out 1s infinite;
+   }
+   
+   .chevron:nth-child(2) {
+     animation: move-chevron 3s ease-out 2s infinite;
+   }
+   
+   .chevron:before,
+   .chevron:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    background:  #110527;
+   }
+   
+   .chevron:before {
+    left: 0;
+    transform: skewY(30deg);
+   }
+   
+   .chevron:after {
+    right: 0;
+    width: 50%;
+    transform: skewY(-30deg);
+   }
+   
+   @keyframes move-chevron {
+    25% {
+     opacity: 1;
+       }
+    33.3% {
+     opacity: 1;
+     transform: translateY(3.8vw);
+    }
+    66.6% {
+     opacity: 1;
+     transform: translateY(5.2vw);
+    }
+    100% {
+     opacity: 0;
+     transform: translateY(8vw) scale(0.5);
+    }
+   }
 }
 
 /*--------------------*/
@@ -296,6 +406,13 @@ p{
     font-family: "Letter Gothic Std";
     margin-top:3%;
     text-align: center;
+}
+
+.retour{
+    font-family: "Dream Orphans";
+    font-size: 1em;
+    color:#110527;
+    text-align: end;
 }
 
 
