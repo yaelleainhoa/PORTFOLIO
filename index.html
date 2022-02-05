@@ -26,12 +26,11 @@
 
             <div class="bulle_homepage">
                 <div id="sketch-container"></div>
-                <!-- <img class="bulle" alt="Bulle de fond temporaire" src="IMAGES/bulle.png"> -->
                 <h2 class="statut">Etudiante ingenieure <br> multimedia</h1>
                 <h1 class="nom">Yaëlle <br> Saralegui Trân</h1>
             </div>
 
-            <div class="transition appear">
+            <div class="transition">
                 <div class="chevron"></div>
                 <div class="chevron"></div>
                 <div class="chevron"></div>
@@ -39,7 +38,7 @@
 
         </section>
         
-        <section id="projets">
+        <section class="projets">
 
             <div class="projet babyrun">
                 <div class="presentation">
@@ -55,31 +54,31 @@
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <img alt="Extrait du jeu" src="IMAGES/babyrun/miniature.png">
-                                <div class="legende">Legende photo !</div>
+                                <div class="legende">Extrait du jeu en caméra par défaut</div>
                             </div>
                             <div class="swiper-slide">
                                 <img alt="Extrait du jeu" src="IMAGES/babyrun/obstacle.png">
-                                <div class="legende">Legende photo !</div>
+                                <div class="legende">Si vous touchez un obstacle non mortel, la voiture vous poursuit</div>
                             </div>
                             <div class="swiper-slide">
                                 <img alt="Extrait du jeu" src="IMAGES/babyrun/voiture.png">
-                                <div class="legende">Legende photo !</div>
+                                <div class="legende">La voiture vous poursuit encore, vous n'avez plus le droit à l'erreur !</div>
                             </div>
                             <div class="swiper-slide">
                                 <img alt="Extrait du jeu" src="IMAGES/babyrun/POV.png">
-                                <div class="legende">Legende photo !</div>
+                                <div class="legende">Changement de caméra, vous êtes dans les yeux du personnage</div>
                             </div>
                             <div class="swiper-slide">
                                 <img alt="Extrait du jeu" src="IMAGES/babyrun/nom.png">
-                                <div class="legende">Legende photo !</div>
+                                <div class="legende">Vous pouvez entrer votre nom de partie pour la sauvegarder par la suite</div>
                             </div>
                             <div class="swiper-slide">
                                 <img alt="Extrait du jeu" src="IMAGES/babyrun/scores.png">
-                                <div class="legende">Legende photo !</div>
+                                <div class="legende">Les meilleurs scores sont enregistrés automatiquement</div>
                             </div>
                             <div class="swiper-slide">
                                 <img alt="Extrait du jeu" src="IMAGES/babyrun/parties.png">
-                                <div class="legende">Legende photo !</div>
+                                <div class="legende">Rejouez les parties sauvegardées</div>
                             </div>
                         </div>
                         <div class="swiper-pagination"></div>
@@ -89,7 +88,7 @@
                         <div class="description_longue"> <b>Run baby run !</b> Est un projet réalisé lors de ma deuxième année à l’IMAC. Il s’agit d’un jeu vidéo dans lequel on incarne un bébé en poussette essayant d’échapper à ses parents en Twingo. Le fonctionnement du jeu s’inspire de Temple Run : on peut éviter les différents obstacles en sautant, se baissant et en naviguant de gauche à droite. Comme dans le jeu, certains obstacles mettent fin à la partie et d’autres ralentissent le joueur, ce qui amène la voiture à s’approcher. Le score du joueur augmente lorsqu’il attrape des pièces (biberon, tétine et peluche dans le jeu). Le terrain est infini et crée aléatoirement, les meilleurs scores sont gardés dans la mémoire du jeu et option additionnelle au jeu original : il est possible dans ce jeu de sauvegarder des parties. 
                             Ce projet a été codé en C++, openGL, SDL.. il est donc téléchargeable sur le git : ….
                             De plus, il s’agissait de la première fois que nous avons utilisé la librairie ASSIMP, qui permet d’ajouter des modèles 3D au projet. Certains des modèles ont donc été crée en Blender pour le projet. </div>
-                            <div class="retour">retour</div>
+                            <div class="retour"></div>
                     </div>
                 </div>
             </div>
@@ -98,7 +97,7 @@
             <div class="projet shaderlab">
                 <div class="presentation">
                     <div class="container">
-                        <div class="twitch"><img class="image" alt="Extrait du jeu" src="IMAGES/shaderlab.png"> </div>
+                        <div class="twitch"><img class="image" alt="Extrait du jeu" src="IMAGES/shaderlab/miniature.png"> </div>
                         <img class="petite bulle" alt="Bulle de fond temporaire" src="IMAGES/petitebulle.png">
                         <div class="titre">Shader <br>Lab</div>
                         <div class="description_courte">Site web permettant de découvrir les modes <br> d’illumination par raymarching en manipulant <br>des shaders, codé en THREE.js, html, js, sass et glsl</div>
@@ -108,32 +107,24 @@
                     <div class="image swiper mySwiper">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
-                                <img alt="Extrait du jeu" src="IMAGES/babyrun/miniature.png">
-                                <div class="legende">Legende photo !</div>
+                                <img alt="Extrait du jeu" src="IMAGES/shaderlab/lambert.png">
+                                <div class="legende">Peu importe le modèle choisi, jouez avec le code, les inputs, changez de scène, de lumières...</div>
                             </div>
                             <div class="swiper-slide">
-                                <img alt="Extrait du jeu" src="IMAGES/babyrun/obstacle.png">
-                                <div class="legende">Legende photo !</div>
+                                <img alt="Extrait du jeu" src="IMAGES/shaderlab/debug.png">
+                                <div class="legende">Une console de debug est présente en dessous du code</div>
                             </div>
                             <div class="swiper-slide">
-                                <img alt="Extrait du jeu" src="IMAGES/babyrun/voiture.png">
-                                <div class="legende">Legende photo !</div>
+                                <img alt="Extrait du jeu" src="IMAGES/shaderlab/color_picker.png">
+                                <div class="legende">Exemple d'input : changez la couleur des objets</div>
                             </div>
                             <div class="swiper-slide">
-                                <img alt="Extrait du jeu" src="IMAGES/babyrun/POV.png">
-                                <div class="legende">Legende photo !</div>
+                                <img alt="Extrait du jeu" src="IMAGES/shaderlab/flat.png">
+                                <div class="legende">Modèle de flat painting, le premier pour débuter</div>
                             </div>
                             <div class="swiper-slide">
-                                <img alt="Extrait du jeu" src="IMAGES/babyrun/nom.png">
-                                <div class="legende">Legende photo !</div>
-                            </div>
-                            <div class="swiper-slide">
-                                <img alt="Extrait du jeu" src="IMAGES/babyrun/scores.png">
-                                <div class="legende">Legende photo !</div>
-                            </div>
-                            <div class="swiper-slide">
-                                <img alt="Extrait du jeu" src="IMAGES/babyrun/parties.png">
-                                <div class="legende">Legende photo !</div>
+                                <img alt="Extrait du jeu" src="IMAGES/shaderlab/blinn.png">
+                                <div class="legende">Modèle de Blinn-Phong, le modèle parfait pour débuter des modèles plus complexes</div>
                             </div>
                         </div>
                         <div class="swiper-pagination"></div>
@@ -144,7 +135,7 @@
                             Ainsi, des modèles de lumières prédéfinis sont disponibles à l’élève pour qu’il puisse étudier le code. De plus, en cliquant sur « switch », il peut directement jouer avec les matériaux des objets (leur couleur, la brillance, la rugosité…) Différents modèles plus ou moins complexes sont disponibles, dont un modèle inspiré du modèle utilisé par Disney.
                             Enfin, l’utilisateur peut lui même s’entrainer avec son propre modèle d’illumination grâce à l’onglet « personal » dans lequel il peut écrire son propre code.
                             Le site web est visitable ici :  </div>
-                            <div class="retour">retour</div>
+                            <div class="retour"></div>
                     </div>
                 </div>
             </div>
@@ -163,27 +154,27 @@
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <img alt="Extrait du jeu" src="IMAGES/portfolio/galerie.png">
-                                <div class="legende">Legende photo !</div>
+                                <div class="legende">Visionnez la galerie des projets</div>
                             </div>
                             <div class="swiper-slide">
                                 <img alt="Extrait du jeu" src="IMAGES/portfolio/projets.png">
-                                <div class="legende">Legende photo !</div>
+                                <div class="legende">En mode administrateur, éditez les projets existants</div>
                             </div>
                             <div class="swiper-slide">
                                 <img alt="Extrait du jeu" src="IMAGES/portfolio/media.png">
-                                <div class="legende">Legende photo !</div>
+                                <div class="legende">Editez les images ou vidéos liés aux projets</div>
                             </div>
                             <div class="swiper-slide">
                                 <img alt="Extrait du jeu" src="IMAGES/portfolio/image.png">
-                                <div class="legende">Legende photo !</div>
+                                <div class="legende">Ajoutez un media</div>
                             </div>
                             <div class="swiper-slide">
                                 <img alt="Extrait du jeu" src="IMAGES/portfolio/projet_creation.png">
-                                <div class="legende">Legende photo !</div>
+                                <div class="legende">Ajoutez un projet</div>
                             </div>
                             <div class="swiper-slide">
                                 <img alt="Extrait du jeu" src="IMAGES/portfolio/competences.png">
-                                <div class="legende">Legende photo !</div>
+                                <div class="legende">Modifiez les compétences que vous souhaitez mettre en avant</div>
                             </div>
                         </div>
                         <div class="swiper-pagination"></div>
@@ -192,7 +183,7 @@
                         <div class="titre">Portfolio</div>
                         <div class="description_longue">Ce projet a été réalisé lors de ma première année à l’IMAC. L’idée était de créer un site web travaillant avec des bases de données. Nous avons décidé de créer un portfolio en ligne, qui soit visitable et modifiable. Ainsi, pour créer son propre portfolio l’utilsateur n’a pas à savoir coder pour ajouter des projets dans la base de données, il lui suffit d’utiliser l’interface spécialement créée pour lui ! Il peut ajouter des photos, des vidéos.. mais aussi des compétences, trié par catégorie.
                             Pour permettre à chacun de le découvrir, la partie administrateur n’est pas cachée, vous pouvez donc vous même ajouter des projets à la base de données ! </div>
-                            <div class="retour">retour</div>
+                            <div class="retour"></div>
                     </div>
                 </div>
             </div>
@@ -211,11 +202,11 @@
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <img alt="Extrait du jeu" src="IMAGES/blender/blender.png">
-                                <div class="legende">Legende photo !</div>
+                                <div class="legende">Rendu (en cycle) de la nature morte</div>
                             </div>
                             <div class="swiper-slide">
                                 <img alt="Extrait du jeu" src="IMAGES/blender/modeles.png">
-                                <div class="legende">Legende photo !</div>
+                                <div class="legende">Close up sur les objets que j'ai modélisé</div>
                             </div>
                         </div>
                         <div class="swiper-pagination"></div>
@@ -223,7 +214,7 @@
                     <div class="text">
                             <div class="titre">Nature morte</div>
                             <div class="description_longue">Ce projet a été réalisé la deuxième année de l’IMAC. Le but était de créer une nature morte, en modélisant nous même au moins 5 modèles. Il s’agissait de ma première utilisation de Blender. J’ai décidé de représenter la maison de mère Grand dans Le Petit Chaperon Rouge. On peut deviner la scènee grâce à la cape rouge sur la chaise, la galette, le panier du chaperon, sa bouteille de lait.. et aussi l’ombre du chasseur sur le mur. </div>
-                            <div class="retour">retour</div>
+                            <div class="retour"></div>
                         </div>
                 </div>
             </div>
@@ -242,11 +233,11 @@
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <img alt="Extrait du jeu" src="IMAGES/coquelicot/coquelicot_0.png">
-                                <div class="legende">Legende photo !</div>
+                                <div class="legende">Echantillons des 1000 images générées</div>
                             </div>
                             <div class="swiper-slide">
                                 <img alt="Extrait du jeu" src="IMAGES/coquelicot/coquelicot_1.png">
-                                <div class="legende">Legende photo !</div>
+                                <div class="legende">Echantillons des 1000 images générées</div>
                             </div>
                         </div>
                         <div class="swiper-pagination"></div>
@@ -255,7 +246,7 @@
                         <div class="titre">Recoding</div>
                         <div class="description_longue">Ces travaux ont été réalisés lors de ma première année à l’IMAC. Il s’agissait de travaux pour découvrir p5, le but étant d’analyser des travaux d’art génératif et de les reproduire au mieux. Je me suis inspirée de Vera Molnar et ait décidé de reproduire deux projets différents. Ces projets m’ont permis de découvrir p5 et d’utiliser l’aléatoire dans un but esthétique. 
                             Les bulles présentes sur ce site ont d’ailleurs été crée en p5 en utilisant du bruit de perlin. </div>
-                            <div class="retour">retour</div>
+                            <div class="retour"></div>
                     </div>
                 </div>
             </div>

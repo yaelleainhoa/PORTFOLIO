@@ -18,23 +18,23 @@ window.addEventListener("wheel", function() {
 })
 
 // Setup isScrolling variable
-var isScrolling;
+// var isScrolling;
 
-// Listen for scroll events
-window.addEventListener('scroll', function ( event ) {
+// // Listen for scroll events
+// window.addEventListener('scroll', function ( event ) {
 
-	// Clear our timeout throughout the scroll
-	window.clearTimeout( isScrolling );
+// 	// Clear our timeout throughout the scroll
+// 	window.clearTimeout( isScrolling );
 
-	// Set a timeout to run after scrolling ends
-	isScrolling = setTimeout(function() {
+// 	// Set a timeout to run after scrolling ends
+// 	isScrolling = setTimeout(function() {
 
-		// Run the callback
-        document.querySelector(".transition").classList.remove("appear");
+// 		// Run the callback
+//         document.querySelector(".transition").classList.remove("appear");
 
-	}, 500);
+// 	}, 500);
 
-}, false);
+// }, false);
 
 
 
@@ -51,16 +51,18 @@ function unfocus(projet){
 
 for(proj in projets){
     let presentation = document.querySelector('.'+projets[proj]+' .presentation');
-    let description = document.querySelector('.'+projets[proj]+' .description .text');
+    let description = document.querySelector('.'+projets[proj]+' .description .retour');
 
     let projet = document.querySelector('.'+projets[proj]);
     presentation.addEventListener('click', () => {
                                             projet.classList.toggle("focus");
                                             unfocus(projet);
+                                            document.querySelector(".transition").classList.remove("appear");
                                         });
 
     description.addEventListener('click', () => {
         projet.classList.toggle("focus");
+        document.querySelector(".transition").classList.add("appear");
         unfocus(projet);
     });
 }

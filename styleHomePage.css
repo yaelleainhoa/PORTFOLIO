@@ -16,6 +16,15 @@ body{
     color:#110527;
     margin: 0;
     overflow-x: hidden;
+    scroll-snap-type: mandatory;
+    scroll-snap-points-y: repeat(100vh);
+    scroll-snap-type: y mandatory;
+}
+
+html{
+    scroll-snap-type: mandatory;
+    scroll-snap-points-y: repeat(100vh);
+    scroll-snap-type: y mandatory;
 }
 
 * {
@@ -135,6 +144,7 @@ p{
 #accueil{
     height: auto;
     margin-bottom: 30vh;
+    scroll-snap-align: start;
 }
 
 .infos{
@@ -155,8 +165,6 @@ p{
     margin:0 auto;
     margin: 0;
     padding: 0;
-    animation: appear 2s ease-in-out;
-
 }
 
 .mail{
@@ -164,14 +172,13 @@ p{
     font-size: 1vw;
     top:-30%;
     font-family: "Montserrat";
-    animation: appear 2s ease-in-out;
-
 }
 
 .contacts{
     text-align: end;
     margin-right: 2vw;
     height: fit-content;
+    animation: appear 2s ease-in-out;
 }
 
 .bulle_homepage{
@@ -229,6 +236,7 @@ p{
     position: absolute;
     opacity:0;
     z-index: -1;
+    animation: appearBull 5s ease-in-out;
    }
 
    .appear{
@@ -237,8 +245,8 @@ p{
    
    .chevron {
      position: absolute;
-     width: 3.5vw;
-     height: 0.8vw;
+     width: 2.625vw;
+     height: 0.6vw;
      opacity: 0;
      transform: scale(0.3);
      animation: move-chevron 3s ease-out infinite;
@@ -296,7 +304,7 @@ p{
 /*-----PROJETS---------*/
 /*--------------------*/
 
-#projets{
+.projets{
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -305,11 +313,15 @@ p{
 
 .projet{
     position: relative;
-    height: 80vh;
+    height: 100vh;
     width: 200vw;
     display: flex;
     transition: all 1s ease-in-out; 
     margin-bottom: 5%;
+    scroll-snap-align: start;
+}
+
+.projet .presentation{
     cursor: pointer;
 }
 
@@ -404,16 +416,46 @@ p{
 
 .description .legende{
     font-family: "Letter Gothic Std";
-    margin-top:3%;
+    margin:3vw;
+    margin-top: 3%;
+    margin-bottom: 0%;
     text-align: center;
+    font-size: 0.8em;
 }
 
-.retour{
+/* .retour{
     font-family: "Dream Orphans";
     font-size: 1em;
     color:#110527;
     text-align: end;
-}
+} */
+
+/* .retour {
+    width:100px;
+    height:30px;
+    display: flex;
+  } */
+  
+  .retour{
+    content: "";
+    margin: 0 5px;
+    background: currentColor;
+    clip-path: polygon(0 10px,calc(100% - 15px) 10px,calc(100% - 15px) 0,100% 50%,calc(100% - 15px) 100%,calc(100% - 15px) calc(100% - 10px),0 calc(100% - 10px));
+    animation: a3 .5s infinite alternate;
+    width:100px;
+    height:30px;
+    --s:-1;
+    margin-top: 3%;
+    position: absolute;
+    right:2vw;
+    cursor: pointer;
+
+  }
+
+  @keyframes a3 {
+    0%  {transform: scaleX(var(--s,1)) translate(-4px)}
+    100%{transform: scaleX(var(--s,1)) translate( 4px)}
+  }
 
 
 .text{
@@ -597,6 +639,8 @@ p{
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+    scroll-snap-align: start;
+
 }
 
 #a_propos .titre{
@@ -647,6 +691,18 @@ to {
     opacity: 1; 
 }
 }
+
+@keyframes appearSlowly {
+    0% {
+        opacity:0;
+    }
+    50% {
+        opacity:0.5;
+    }
+    100% {
+        opacity: 1; 
+    }
+    }
 
 @keyframes appearBull {
 0% {
