@@ -58,9 +58,6 @@ h3{
 
 p{
     font-family: "Montserrat";
-    font-size: 10%;
-    width: 80%;
-    text-align: justify;
 }
 
 #sketch-container {
@@ -128,7 +125,8 @@ p{
     position: absolute;
     width: 2vw;
     height: 2vw;
-    right: 4vw;
+    right: 3vw;
+    margin-top:1vh;
     /* margin: 100px auto; */
   
     border: 0.2vw solid #110527;
@@ -152,6 +150,12 @@ p{
 
   .arrow-round:hover{
     cursor: pointer;
+    border-color:white;
+    border-right-color: transparent;
+  }
+    .arrow-round:hover::after{
+    cursor: pointer;
+    border-bottom-color:white;
   }
   
 
@@ -165,6 +169,24 @@ p{
     scroll-snap-align: start;
 }
 
+.messagedefilant > :first-child{
+    white-space : nowrap;
+    color: #110527;
+    font-family: "Letter Gothic Std";
+    padding:0.5%;
+    margin:0%;
+    animation : defilement 10s infinite linear;
+}
+
+@keyframes defilement{
+    from{
+        transform:translateX(100%);
+    }
+    to{
+        transform:translateX(-50%);
+    }
+}
+
 .infos{
     transform: rotate(-90deg);
     right: 48vw;
@@ -174,7 +196,6 @@ p{
     font-size:1vw;
     letter-spacing: 8px;
     animation: appear 2s ease-in-out;
-
 }
 
 .linkedin{
@@ -191,17 +212,20 @@ p{
     top:-30%;
     font-family: "Montserrat";
 }
+.mail>p{
+    margin:0;
+}
 
 .contacts{
     text-align: end;
     margin-right: 2vw;
     height: fit-content;
     animation: appear 2s ease-in-out;
+    width:fit-content;
+    position: absolute;
+    right: 0;
 }
 
-.contacts .p{
-    font-size: 2em;
-}
 
 .bulle_homepage{
     position: relative;
@@ -366,7 +390,7 @@ p{
 
 .petite{
     position: absolute;
-    height: 90%;
+    height: 25vw;
     width: auto;
     opacity: 0.4;
     animation: moveUpDown 2s ease-in-out infinite alternate;
@@ -447,19 +471,6 @@ p{
     text-align: center;
     font-size: 0.8em;
 }
-
-/* .retour{
-    font-family: "Dream Orphans";
-    font-size: 1em;
-    color:#110527;
-    text-align: end;
-} */
-
-/* .retour {
-    width:100px;
-    height:30px;
-    display: flex;
-  } */
   
   .retour{
     content: "";
@@ -585,7 +596,7 @@ p{
 
 .portfolio .presentation .petite{
     top:-40%;
-    left:42%;
+    left:38%;
 }
 
 .portfolio .presentation .description_courte{
@@ -638,8 +649,8 @@ p{
 }
 
 .coquelicot .presentation .petite{
-    left:40%;
-    top:-30%;
+    left:30%;
+    top:-20%;
 }
 
 .coquelicot .presentation .description_courte{
@@ -653,33 +664,49 @@ p{
 /*-----A PROPOS---------*/
 /*--------------------*/
 
-#a_propos{
+.divider{
     border-top-left-radius: 50vw;
     border-top-right-radius: 50vw;
     background-color: white;
-    font-size: 20vw;;
     width: 100%;
-    height: 1000px;
+    height: 500px;
+    position: absolute;
+    z-index: -1;
+}
+
+#a_propos{
+    /* background-color: white; */
+    font-size: 2vw;;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
     scroll-snap-align: start;
-
+    position:relative;
 }
 
 #a_propos .titre{
     color: #110527;
     font-family: "Magilio";
-    font-size: 80px;
+    font-size: 8vw;
     text-align: center;
     position: relative;
     top:50px
 }
-/* 
-#a_propos .petit_texte{
 
-} */
+#a_propos .petit_texte{
+    background-color: white;
+    margin-right:10%;
+    margin-left:10%;
+}
+
+.foot{
+    background-color: white;
+    height: 10vw;
+    position: absolute;
+    top:200px;
+    width:100%;
+}
 
 @keyframes moveUpDown {
 	from {
