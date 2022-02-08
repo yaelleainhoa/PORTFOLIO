@@ -1,7 +1,22 @@
-@import url('http://fonts.cdnfonts.com/css/letter-gothic-std-2');
-@import url('http://fonts.cdnfonts.com/css/magilio');
-@import url('http://fonts.cdnfonts.com/css/dream-orphans');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+@font-face {
+    font-family: "Montserrat";
+    src: url("./fonts/Montserrat/Montserrat-VariableFont_wght.ttf")
+  }
+
+  @font-face {
+    font-family: "Letter Gothic Std";
+    src: url("./fonts/LetterGothicStd.otf")
+  }
+
+  @font-face {
+    font-family: "Magilio";
+    src: url("./fonts/magilio-font/MagilioRegular-8Mxvg.otf")
+  }
+
+  @font-face {
+    font-family: "Dream Orphans";
+    src: url("./fonts/dream_orphans/dream\ orphans.otf")
+  }
 /*letter gothic std
 magilio
 dream orphans
@@ -182,6 +197,10 @@ p{
     margin-right: 2vw;
     height: fit-content;
     animation: appear 2s ease-in-out;
+}
+
+.contacts .p{
+    font-size: 2em;
 }
 
 .bulle_homepage{
@@ -397,10 +416,12 @@ p{
     border-radius: 20px;
     width: 100%;
     height: auto;
+    transition-duration: 0.5s;
 }
 
 .presentation:hover .image{
     transform: translateX(10px) translateY(-10px);
+    transition-duration: 0.5s;
 }
 
 .description{
@@ -479,7 +500,7 @@ p{
 .description_longue{
     position: relative;
     font-family: "Montserrat";
-    font-size: 1vw;
+    font-size: 1em;
     color:#110527;
     text-align: justify;
 }

@@ -4,10 +4,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
         <link rel="stylesheet" href="styleHomePage.css">
         <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
-        <link href="http://fonts.cdnfonts.com/css/letter-gothic-std-2" rel="stylesheet">
+        <!-- <link href="http://fonts.cdnfonts.com/css/letter-gothic-std-2" rel="stylesheet">
         <link href="http://fonts.cdnfonts.com/css/magilio" rel="stylesheet">
-        <link href="http://fonts.cdnfonts.com/css/dream-orphans" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet"> 		
+        <link href="http://fonts.cdnfonts.com/css/dream-orphans" rel="stylesheet"> -->
+        <!-- <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet"> 	 -->
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 	
         <meta charset="UTP-8"/>
 	</head>
 
@@ -21,6 +22,10 @@
             <div class="contacts">
                 <a class="mail" href="mailto:yaellesaraleguitran@gmail.com"><h3>yaellesaraleguitran@gmail.com</h3></a>
                 <a class="linkedin" target="_blank" href="https://www.linkedin.com/in/ya%C3%ABlle-saralegui-tran-552351222/"> <h3>LINKEDIN</h3></a>
+            </div>
+
+            <div class="refresh">
+                <p>Rafraîchissez la page pour une toute nouvelle bulle</p>
                 <div class="arrow-round" onClick="refreshPage()"></div>
             </div>
 
@@ -94,16 +99,6 @@
                             tentant d'échapper à ses parents qui le poursuivant en Twingo.
                             <br>
                             <br>
-                            Nous avons travaillé sur plusieurs fonctionnalités du jeu d'origine : les obstacles qui ralentissent le joueur, 
-                            les pièces pour augmenter le score du joueur, le terrain infini (ici crée aléatoirement),
-                            les meilleurs scores gardés en mémoire... Nous avons essayé de rendre le jeu le plus attractif avec les pièces qui tournent sur elles même
-                            et les obstacles qui deviennent rouges s'ils ont été touchés. 
-                            <br>
-                            Nous avons aussi plusieurs fonctions additionnelles au jeu d'origine :
-                            vous pouvez faire tourner la caméra, changer de caméra et voir à travers les yeux du joueur et enfin, il est possible dans ce jeu de 
-                            sauvegarder des parties. 
-                            <br>
-                            <br>
                             Il s’agissait de la première fois que nous avons utilisé la librairie ASSIMP, 
                             qui permet d’ajouter des modèles 3D au projet. Ainsi, certains des modèles ont donc été crée en Blender spécialement pour le projet. </div>
                             <div class="retour"></div>
@@ -151,22 +146,14 @@
                     <div class="text">
                         <div class="titre">Shader Lab</div>
                         <div class="description_longue"><b>Shader Lab</b> a été crée lors d’un projet tuteuré pendant ma deuxième année à l'IMAC.
-                            La demande du client était de créer un site web, dont le fonctionnement s’inspire de Shader Toy, 
-                            cela à visée pédagogique. Le but était de permettre aux élèves de voir plusieurs modèles d’illuminations 
-                            fonctionnant avec la technique du raymarching (l’envoi de rayon pour calculer la lumière d’une scène), bien que le fonctionnement de celui ci lui soit caché. 
+                            La demande du client était de créer un site web pédagogique qui permette aux élèves de voir plusieurs modèles d’illuminations 
+                            fonctionnant avec la technique du raymarching, et de coder lui même son modèle. 
                             <br>
                             <br>
                             J'ai principalement travaillé sur le lien entre l'interface du site web et l'affichage de la scène, via les inputs par exemple.
                             Les outils principaux sur lesquels j'ai travaillé sont donc <b>Javascript</b> et <b>THREE.js</b> pour tout ce qui concerne l'affichage de la scène, 
                             l'utilisation de la caméra, et l'utilisation des shaders
                             codés en GLSL. 
-                            <br>
-                            <br>
-
-                            Le site permet de visualiser différents modèles d'illumination déjà codés, et de changer en temps réel des paramètres de la scène. 
-                            Pour apprendre à coder ces modèles, le code est lisible, éditable et compilable en ligne. 
-                            De plus, l’utilisateur peut lui même s’entrainer avec son propre modèle d’illumination grâce à l’onglet « personal » 
-                            dans lequel il peut écrire son propre code, aidé par un court tutoriel.
                             <br>
                             <br>
                             Vous pouvez découvrir le site ici : <a href="http://tanguylorent.com/SHADER_LAB/"><b>SHADER LAB</b></a>
@@ -226,14 +213,7 @@
 
                             Le site est un portfolio divisé en deux parties : la partie <b>visiteur</b>, qui permet de voir une galerie de projets et 
                             la partie <b>administrateur</b> qui permet de changer la base de données du site en modifiant ou ajoutant des projets. 
-                            Dans la partie visiteur, on peut voir les compétences de l’utilisateur triées par catégories, et la galerie de projet peut 
-                            aussi être filtrée par catégories (programmation, audiovisuel…). En cliquant sur un projet, on a accès a des photos ou vidéos 
-                            du projet ainsi que des informations supplémentaires. 
-                            
-                            <br>
-                            <br>
-                            Pour la partie administrateur, l’utilisateur peut facilement ajouter des 
-                            compétences, projets et les lier à des catégories. Nous avons essayé de proposer une partie administrateur simple de prise 
+                            Nous avons essayé de proposer une partie administrateur simple de prise 
                             en main pour que le site soit modifiable sans avoir besoin de savoir coder.</div>
                             <div class="retour"></div>
                     </div>
@@ -307,12 +287,7 @@
                             <br>
                             <br>
                             Les images présentées sont des échantillons des mille images que nous avons généré avec mon binôme, dans le but d'en faire une base 
-                            de données suffisante pour entrainer une intelligence artificielle à créer une image semblable de toutes pièces.
-                             N'ayant pas les moyens suffisants pour entrainer notre propre GAN
-                            nous avons dû abandonner cette idée, mais nous avons quand même produit ces mille images.
-
-                            Il s'agissait de notre première utilisation de p5.js, nous avons utilisé de l'aléatoire sur plusieurs paramètres que nous pouvions changer grâce à des inputs.
-                            
+                            de données suffisante pour entrainer notre propre GAN (intelligence artificielle).                            
                             <br>
                             <br>
                             Par ailleurs, la bulle présente sur ce portfolio est codée en p5 et utilise du bruit de Perlin pour que 
