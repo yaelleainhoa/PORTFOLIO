@@ -34,6 +34,8 @@ body{
     scroll-snap-type: mandatory;
     scroll-snap-points-y: repeat(100vh);
     scroll-snap-type: y mandatory;
+    font-family: "Magilio";
+    font-size: 1.25em;
 }
 
 html{
@@ -121,13 +123,19 @@ p{
 
 }
 
-.arrow-round {
+.arrow-container{
     position: absolute;
     width: 2vw;
     height: 2vw;
     right: 3vw;
     margin-top:1vh;
-    /* margin: 100px auto; */
+    z-index: 2;
+}
+
+.arrow-round {
+    position: absolute;
+    width: 100%;
+    height: 100%;
   
     border: 0.2vw solid #110527;
     border-radius: 50%;
@@ -148,12 +156,12 @@ p{
     border-left-color: transparent;
   }
 
-  .arrow-round:hover{
+  .arrow-container:hover .arrow-round{
     cursor: pointer;
     border-color:white;
     border-right-color: transparent;
   }
-    .arrow-round:hover::after{
+  .arrow-container:hover .arrow-round::after{
     cursor: pointer;
     border-bottom-color:white;
   }
@@ -443,7 +451,7 @@ p{
     transition-duration: 0.5s;
 }
 
-.presentation:hover .image{
+.presentation .image:hover{
     transform: translateX(10px) translateY(-10px);
     transition-duration: 0.5s;
 }
@@ -516,6 +524,17 @@ p{
     text-align: justify;
 }
 
+.cliquez{
+    position: relative;
+    top:-30vw;
+    right: 10vw;
+    transform: rotate(30px);
+}
+
+path {
+    fill: transparent;
+  }
+  
 
 
 /*----BABYRUN---------*/
@@ -532,12 +551,12 @@ p{
 }
 
 .babyrun .presentation .titre{
-    bottom: 12%;
-    left:28%;
+    bottom: 40%;
+    left:30%;
 }
 
 .babyrun .presentation .petite{
-    bottom:5%;
+    bottom:45%;
     left:38%;
     width: 30%;
     height: auto;
@@ -546,7 +565,7 @@ p{
 .babyrun .presentation .description_courte{
     text-align: start;
     left:42%;
-    bottom:-2%;
+    bottom:25%;
 }
 
 /*------SHADERLAB---------*/
@@ -665,11 +684,12 @@ p{
 /*--------------------*/
 
 .divider{
-    border-top-left-radius: 50vw;
-    border-top-right-radius: 50vw;
+    /* border-top-left-radius: 50vw;
+    border-top-right-radius: 50vw; */
+    background: linear-gradient(#FFDCDB, 40%,white);
     background-color: white;
     width: 100%;
-    height: 500px;
+    height: 900px;
     position: absolute;
     z-index: -1;
 }
@@ -695,7 +715,7 @@ p{
 }
 
 #a_propos .petit_texte{
-    background-color: white;
+    /* background-color: white; */
     margin-right:10%;
     margin-left:10%;
 }
