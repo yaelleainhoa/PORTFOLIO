@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Montserrat";
-    src: url("./fonts/Montserrat/Montserrat-VariableFont_wght.ttf")
+    src: url("./fonts/Montserrat-VariableFont_wght.ttf")
   }
 
   @font-face {
@@ -16,6 +16,11 @@
   @font-face {
     font-family: "Dream Orphans";
     src: url("./fonts/dream_orphans/dream\ orphans.otf")
+  }
+
+  @font-face {
+    font-family: "Chloe";
+    src: url("./fonts/Chloe-Regular.otf")
   }
 /*letter gothic std
 magilio
@@ -34,7 +39,7 @@ body{
     scroll-snap-type: mandatory;
     scroll-snap-points-y: repeat(100vh);
     scroll-snap-type: y mandatory;
-    font-family: "Magilio";
+    font-family: "Chloe";
     font-size: 1.25em;
 }
 
@@ -60,6 +65,7 @@ h3{
 
 p{
     font-family: "Montserrat";
+    font-weight: lighter;
 }
 
 #sketch-container {
@@ -72,6 +78,8 @@ p{
 
 .p5Canvas{
     border-radius: 100%;
+    width:55vw !important;
+    height: auto !important;
     animation: appearBull 2s ease-in-out;
 }
 
@@ -112,13 +120,13 @@ p{
   }
 
   .swiper-pagination-bullet{
-      opacity: 0.08 !important;
+      opacity: 0.3 !important;
       width: 12px !important;
       height: 12px !important;
   }
 
   .swiper-pagination-bullet-active{
-    background:  #FFDCDB !important;
+    background:  #6235C6 !important;
     opacity: 1 !important;
 
 }
@@ -218,10 +226,10 @@ p{
     position: relative;
     font-size: 1vw;
     top:-30%;
-    font-family: "Montserrat";
 }
 .mail>p{
     margin:0;
+    font-family: "Chloe" !important;
 }
 
 .contacts{
@@ -258,7 +266,7 @@ p{
     position: absolute;
     text-align: start;
     font-family: "Dream orphans";
-    font-size:7vw;
+    font-size:8.5vw;
     left:15vw;
     top:30vh;
     animation: appearFromLeft 1s ease-in-out;
@@ -267,9 +275,9 @@ p{
 .statut{
     position: absolute;
     text-align: end;
-    font-family: "Magilio";
+    font-family: "Chloe";
     color:white;
-    font-size: 4vw;
+    font-size: 5vw;
     letter-spacing: 5px;
     right:15vw;
     animation: appearFromRight 1s ease-in-out;
@@ -414,6 +422,7 @@ p{
 .description_courte{
     position: absolute;
     font-family: "Montserrat";
+    font-weight: lighter;
     font-size: 1.5vw;
     color:#110527;
 }
@@ -519,16 +528,16 @@ p{
 .description_longue{
     position: relative;
     font-family: "Montserrat";
+    font-weight: lighter;
     font-size: 1em;
     color:#110527;
     text-align: justify;
 }
 
 .cliquez{
-    position: relative;
-    top:-30vw;
-    right: 10vw;
-    transform: rotate(30px);
+    position: absolute;
+    top:-8vw !important;
+    left: -10vw !important;
 }
 
 path {
@@ -565,7 +574,7 @@ path {
 .babyrun .presentation .description_courte{
     text-align: start;
     left:42%;
-    bottom:25%;
+    bottom:20%;
 }
 
 /*------SHADERLAB---------*/
@@ -707,7 +716,7 @@ path {
 
 #a_propos .titre{
     color: #110527;
-    font-family: "Magilio";
+    font-family: "Chloe";
     font-size: 8vw;
     text-align: center;
     position: relative;
@@ -715,9 +724,9 @@ path {
 }
 
 #a_propos .petit_texte{
-    /* background-color: white; */
     margin-right:10%;
     margin-left:10%;
+    text-align: center;
 }
 
 .foot{
