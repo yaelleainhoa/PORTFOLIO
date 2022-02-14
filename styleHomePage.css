@@ -536,8 +536,10 @@ p{
 
 .cliquez{
     position: absolute;
-    top:-8vw !important;
-    left: -10vw !important;
+    top: -20vh;
+    left: -15vw;
+    width: 45%;
+  }
 }
 
 path {
@@ -560,12 +562,12 @@ path {
 }
 
 .babyrun .presentation .titre{
-    bottom: 40%;
+    bottom: 25%;
     left:30%;
 }
 
 .babyrun .presentation .petite{
-    bottom:45%;
+    bottom:35%;
     left:38%;
     width: 30%;
     height: auto;
@@ -574,7 +576,7 @@ path {
 .babyrun .presentation .description_courte{
     text-align: start;
     left:42%;
-    bottom:20%;
+    bottom:3%;
 }
 
 /*------SHADERLAB---------*/
