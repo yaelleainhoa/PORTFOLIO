@@ -70,7 +70,7 @@ p{
 
 #sketch-container {
     position: absolute;
-    top: 55%;
+    top: 30vw;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%)
@@ -192,6 +192,7 @@ p{
     padding:0.5%;
     margin:0%;
     animation : defilement 10s infinite linear;
+    font-size: 1.2vw;
 }
 
 @keyframes defilement{
@@ -224,7 +225,7 @@ p{
 
 .mail{
     position: relative;
-    font-size: 1vw;
+    font-size: 2vw;
     top:-30%;
 }
 .mail>p{
@@ -415,6 +416,10 @@ p{
     font-family: "Dream Orphans";
     font-size: 8vw;
     color: white;
+}
+
+.telephone{
+    opacity: 0;
 }
 
 .description_courte{
