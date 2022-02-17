@@ -12,6 +12,9 @@ function setup() {
     canvas.parent('sketch-container');
     background(50)
     ran=random(0,10)
+    ranTaille=random(3,5)
+    ranTaille=int(ranTaille)
+    noiseScale=random(0.004,0.01)
   }
 
 function draw(){
