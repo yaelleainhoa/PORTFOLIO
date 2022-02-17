@@ -11,11 +11,11 @@ function refreshPage(){
     window.location.reload();
 } 
 
-window.addEventListener("wheel", function() {
-    let pageY = window.scrollY;
-    document.querySelector(".transition").style.transform = `translateY(${pageY}px)`;
-    document.querySelector(".transition").classList.add("appear");
-})
+// window.addEventListener("wheel", function() {
+//     let pageY = window.scrollY;
+//     document.querySelector(".transition").style.transform = `translateY(${pageY}px)`;
+//     document.querySelector(".transition").classList.add("appear");
+// })
 
 // Setup isScrolling variable
 // var isScrolling;
@@ -40,6 +40,9 @@ window.addEventListener("wheel", function() {
 
 let projets = ['babyrun', 'shaderlab', 'portfolio', 'blender', 'coquelicot'];
 
+var isUnfocused;
+
+
 function unfocus(projet){
     for(proj in projets){
         let projetEnCours = document.querySelector('.'+projets[proj]);
@@ -47,6 +50,8 @@ function unfocus(projet){
             projetEnCours.classList.remove("focus");
         }
     }
+
+
 }
 
 for(proj in projets){
@@ -62,7 +67,14 @@ for(proj in projets){
 
     description.addEventListener('click', () => {
         projet.classList.toggle("focus");
-        document.querySelector(".transition").classList.add("appear");
+        window.clearTimeout( isUnfocused );
+
+        isUnfocused = setTimeout(function() {
+    
+            // Run the callback
+            document.querySelector(".transition").classList.add("appear");
+    
+        }, 1000);
         unfocus(projet);
     });
 }
