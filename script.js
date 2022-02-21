@@ -11,7 +11,7 @@ function refreshPage(){
     window.location.reload();
 } 
 
-let projets = ['babyrun', 'shaderlab', 'portfolio', 'blender', 'coquelicot'];
+let projets = ['babyrun', 'shaderlab', 'portfolio', 'blender', 'coquelicot', 'amaya'];
 
 var isUnfocused;
 

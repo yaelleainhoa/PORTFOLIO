@@ -65,11 +65,16 @@
         top:20% !important;
     }
 
-    .titre{
+    .presentation .titre{
         opacity: 0;
     }
 
-    .telephone{
+    .description .titre{
+        text-align: center;
+        font-family: "Montserrat";
+    }
+
+    .presentation .telephone{
         opacity: 1;
         top:100% !important;
         left:-2% !important;
@@ -100,8 +105,8 @@
     }
 
     .swiper{
-        width: 80%;
-        height: 30%;
+        width: 50%;
+        height: 35%;
     }
 
     .swiper-slide{
@@ -111,6 +116,7 @@
     .swiper-pagination-bullets{
         right: 78vw !important;
         top: 45% !important;
+        left:0%;
     }
 
     .swiper-pagination-bullet {
@@ -121,6 +127,8 @@
 
     .text{
         width: 80%;
+        margin: 3%;
+        margin-top: 0%;
     }
 
     .description .titre{
@@ -139,7 +147,7 @@
     }
 
     .legende{
-        font-size: 3vw !important;
+        font-size: 2vw !important;
     }
 
 
@@ -162,6 +170,24 @@
     padding: 0%!important;
 }
 
+/*------AMAYA---------*/
+/*PRESENTATION*/
+
+.amaya .presentation .container{
+    width: 160% !important;
+    left:35% !important;
+    top:15%;
+}
+
+.amaya .presentation .titre{
+    top:10%;
+    left:-6% !important;
+}
+
+.amaya .presentation .description_courte{
+    left:-16% !important;
+    padding: 0%!important;
+}
 
 
 /*------PORTFOLIO---------*/

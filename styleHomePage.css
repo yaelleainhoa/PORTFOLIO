@@ -609,6 +609,35 @@ path {
 
 }
 
+/*------AMAYA---------*/
+/*PRESENTATION*/
+
+.amaya .presentation .twitch{
+    width: 20%;;
+}
+
+.amaya .presentation .container{
+    left:50%;
+    top:15%;
+}
+
+.amaya .presentation .titre{
+    top:20%;
+    left:-34%;
+}
+
+.amaya .presentation .petite{
+    left:-0%;
+    top:10%;
+}
+
+.amaya .presentation .description_courte{
+    text-align: end;
+   left:-34%;
+   top:50%;
+
+}
+
 
 
 /*------PORTFOLIO---------*/
