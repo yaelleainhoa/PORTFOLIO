@@ -8,7 +8,7 @@ let ran
 
 
 function setup() {
-    let canvas = createCanvas(700, 700);
+    let canvas = createCanvas(600, 600);
     canvas.parent('sketch-container');
     background(50)
     ran=random(0,10)

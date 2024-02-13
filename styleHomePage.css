@@ -69,18 +69,24 @@ p{
 }
 
 #sketch-container {
-    position: absolute;
-    top: 30vw;
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* top: 30vw;
     left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%)
+    margin-right: -50%; */
+    /* transform: translate(-50%, -50%) */
 }
 
 .p5Canvas{
     border-radius: 100%;
-    width:55vw !important;
-    height: auto !important;
-    animation: appearBull 2s ease-in-out;
+    animation: appearBull 1.5s ease-in-out;
+    width: 700px !important;
+    height: 700px !important;
+    position:relative;
+    z-index: -1;
 }
 
 .swiper {
@@ -216,40 +222,35 @@ p{
 }
 
 .linkedin{
-    font-family: "Dream Orphans";
-    font-size: 2vw;
-    margin:0 auto;
+    font-family: "Montserrat";
+    font-size: 25px;
     margin: 0;
     padding: 0;
+    animation: appear 3s ease-in-out;
 }
 
 .mail{
     position: relative;
-    font-size: 2vw;
+    font-size: 25px;
     top:-30%;
-}
-.mail>p{
+    font-family: "Montserrat";
     margin:0;
-    font-family: "Chloe" !important;
+    font-weight: normal;
+    animation: appear 3s ease-in-out;
 }
 
 .contacts{
     text-align: end;
     margin-right: 2vw;
     height: fit-content;
-    animation: appear 2s ease-in-out;
     width:fit-content;
     position: absolute;
-    right: 0;
+    transform: translate(20%, -60%);
+    animation: appearFromRight 2s ease-in-out;
 }
 
 
 .bulle_homepage{
-    position: relative;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 5%;
     height: 100vh;
     width: 100vw;
 }
@@ -267,21 +268,18 @@ p{
     position: absolute;
     text-align: start;
     font-family: "Dream orphans";
-    font-size:8.5vw;
-    left:15vw;
-    top:30vh;
+    font-size:110px;
+    transform: translate(-20%, 50%);
     animation: appearFromLeft 1s ease-in-out;
 }
 
 .statut{
-    position: absolute;
     text-align: end;
     font-family: "Chloe";
     color:white;
-    font-size: 5vw;
+    font-size: 60px;
     letter-spacing: 5px;
-    right:15vw;
-    animation: appearFromRight 1s ease-in-out;
+    margin:0px;
 }
 
 /*--------------------*/
@@ -405,7 +403,7 @@ p{
 
 .petite{
     position: absolute;
-    height: 25vw;
+    height: 300px;
     width: auto;
     opacity: 0.4;
     animation: moveUpDown 2s ease-in-out infinite alternate;
@@ -414,7 +412,7 @@ p{
 .titre{
     position: absolute;
     font-family: "Dream Orphans";
-    font-size: 8vw;
+    font-size: 110px;
     color: white;
 }
 
@@ -426,12 +424,13 @@ p{
     position: absolute;
     font-family: "Montserrat";
     font-weight: lighter;
-    font-size: 1.5vw;
+    font-size: 20px;
     color:#110527;
 }
 
 .container{
     position: relative;
+    width: fit-content
 }
 
 .presentation .petite{
@@ -442,7 +441,6 @@ p{
 .presentation .twitch{
     position: relative;
     display:flex;
-    width: 40%;
     height: 100%;
 }
 
@@ -543,7 +541,7 @@ p{
     left: -15vw;
     width: 45%;
   }
-}
+
 
 path {
     fill: transparent;
@@ -555,38 +553,33 @@ path {
 /*PRESENTATION*/
 
 .babyrun .presentation .twitch{
-    width: 40%;;
+    width: 400px;
 }
 
 .babyrun .presentation .container{
     left:25%;
     top:35%;
-    width: 80%;
 }
 
 .babyrun .presentation .titre{
-    bottom: 25%;
-    left:30%;
+    transform: translate(140%, -115%);
 }
 
 .babyrun .presentation .petite{
     bottom:35%;
     left:38%;
-    width: 30%;
-    height: auto;
 }
 
 .babyrun .presentation .description_courte{
     text-align: start;
-    left:42%;
-    bottom:3%;
+    transform: translate(135%, -60%);
 }
 
 /*------SHADERLAB---------*/
 /*PRESENTATION*/
 
 .shaderlab .presentation .twitch{
-    width: 30%;;
+    width: 400px;;
 }
 
 .shaderlab .presentation .container{
@@ -596,24 +589,25 @@ path {
 
 .shaderlab .presentation .titre{
     top:10%;
-    left:-18%;
+    left:-58%;
 }
 
 .shaderlab .presentation .petite{
-    left:-2%;
+    left:-50%;
     top:10%;
 }
 
 .shaderlab .presentation .description_courte{
     text-align: start;
-
+    width:500px;
+    top: 105%;
 }
 
 /*------AMAYA---------*/
 /*PRESENTATION*/
 
 .amaya .presentation .twitch{
-    width: 20%;;
+    width: 250px;;
 }
 
 .amaya .presentation .container{
@@ -623,19 +617,18 @@ path {
 
 .amaya .presentation .titre{
     top:20%;
-    left:-34%;
+    left:-140%;
 }
 
 .amaya .presentation .petite{
-    left:-0%;
+    left:-100%;
     top:10%;
 }
 
 .amaya .presentation .description_courte{
     text-align: end;
-   left:-34%;
+   left:-184%;
    top:50%;
-
 }
 
 
@@ -643,7 +636,7 @@ path {
 /*------PORTFOLIO---------*/
 
 .portfolio .presentation .twitch{
-    width: 35%;;
+    width: 550px;;
 }
 
 .portfolio .presentation .container{
@@ -652,13 +645,13 @@ path {
 }
 
 .portfolio .presentation .titre{
-    top:-40%;
-    left:30%;
+    top:-51%;
+    left:74%;
 }
 
 .portfolio .presentation .petite{
     top:-40%;
-    left:38%;
+    left:49%;
 }
 
 .portfolio .presentation .description_courte{
@@ -667,8 +660,33 @@ path {
     left:2%;
 }
 
-/*------BLENDER---------*/
+ /* ------BLENDER--------- */
 
+.blender .presentation .twitch{
+    width: 550px;;
+}
+
+.blender .presentation .container{
+    left:20%;
+    top:40%;
+}
+
+.blender .presentation .titre{
+    top:-51%;
+    left:74%;
+}
+
+.blender .presentation .petite{
+    top:-40%;
+    left:49%;
+}
+
+.blender .presentation .description_courte{
+    text-align: start;
+    top:-35%;
+    left:2%;
+}
+/*
 .blender .presentation .twitch{
     width: 40%;;
 }
@@ -692,11 +710,36 @@ path {
     text-align: end;
     left:-30%;
     bottom:20%;
-}
+} */
 
 /*------COQUELICOT---------*/
 
 .coquelicot .presentation .twitch{
+    width: 550px;;
+}
+
+.coquelicot .presentation .container{
+    left:20%;
+    top:40%;
+}
+
+.coquelicot .presentation .titre{
+    top:-51%;
+    left:74%;
+}
+
+.coquelicot .presentation .petite{
+    top:-40%;
+    left:49%;
+}
+
+.coquelicot .presentation .description_courte{
+    text-align: start;
+    top:-35%;
+    left:2%;
+}
+
+/* .coquelicot .presentation .twitch{
     width: 30%;;
 }
 
@@ -719,7 +762,7 @@ path {
     text-align: start;
     left:32%;
     top:0%;
-}
+} */
 
 
 /*--------------------*/
@@ -772,12 +815,9 @@ path {
 }
 
 @keyframes moveUpDown {
-	from {
-      transform: translateY(0px) translateX(-50%);
-	}
-    to {
-      transform: translateY(-30px) translateX(-50%);
-    }
+    0% { transform: translateY(0); } /* Start from current position */
+    50% { transform: translateY(-30px); } /* Bounce up */
+    100% { transform: translateY(0); } /* Return to current position */
 }
 
 @keyframes miniatureToProject {
@@ -835,21 +875,21 @@ to {
 @keyframes appearFromLeft {
 from {
     opacity:0;
-    transform: translateX(-100px);
+    transform: translate(-10%, 50%);
 }
 to {
     opacity: 1; 
-    transform: translateX(0px);
+    transform: translate(-20%, 50%);
 }
 }
 
 @keyframes appearFromRight {
 from {
     opacity:0;
-    transform: translateX(100px);
+    transform: translate(20%, -60%);
 }
 to {
     opacity: 1; 
-    transform: translateX(0px);
+    transform: translate(20%, -60%);
 }
 }
