@@ -337,6 +337,22 @@ p{
     transform: translate(-20%, -155%);
 }
 
+.shaderlab .presentation .titre{
+    transform: translate(-20%, -305%);
+}
+
+.amaya .presentation .titre{
+    transform: translate(-20%, -135%);
+}
+
+.portfolio .presentation .titre{
+    transform: translate(-20%, -265%);
+}
+
+.coquelicot .presentation .titre{
+    transform: translate(-20%, -355%);
+}
+
 .telephone{
     opacity: 0;
 }
