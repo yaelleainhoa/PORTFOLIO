@@ -96,6 +96,7 @@ p{
     height: 100%;
     margin-left: 2% !important;
     margin-right: 0% !important;
+    min-width: 80vw;
   }
 
   .swiper-slide {
@@ -390,6 +391,7 @@ p{
     display:flex;
     height: 100%;
     width:400px;
+    max-width: 80vw;
 }
 
 .presentation .twitch::before{
