@@ -417,8 +417,12 @@ p{
 .description{
     position: relative;
     background-color:white;
-    /* transition: transform 0.5s, filter 0.5s; */
+    transition: transform 0.5s, filter 0.5s;
     /* transition: all 1s ease-in-out; */
+}
+
+.descriptionContent {
+    transition: transform 0s,filter 0s;
 }
 
 .descriptionContent
